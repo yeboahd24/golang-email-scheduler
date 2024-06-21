@@ -17,7 +17,7 @@ func main() {
 		log.Fatalf("Failed to connect to RabbitMQ: %v", err)
 	}
 
-	emailService := NewEmailService("sandbox.smtp.mailtrap.io", "2525", "8483b0b9fab2f3", "7c95e08b62e4e9")
+	emailService := NewEmailService("sandbox.smtp.mailtrap.io", "2525", "username", "password")
 
 	schedulerHandler := NewSchedulerHandler(rabbitMQ)
 
